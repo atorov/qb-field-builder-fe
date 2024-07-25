@@ -1,8 +1,19 @@
+/**
+ * This hook handles the submission of form data using the `useMutation` hook from `@tanstack/react-query`.
+ * It adapts the frontend state to a backend-compatible format, sends the data to the backend API,
+ * and updates the frontend state with the response.
+ */
+
 import { useMutation } from "@tanstack/react-query";
 import useBuilder from "../BuilderContext/useBuilder";
 import beToFeDataAdapter from "./beToFeDataAdapter";
 import feToBeDataAdapter from "./feToBeDataAdapter";
 
+/**
+ * Submits the form data to the backend and updates the frontend state on success.
+ *
+ * @returns {MutationResult} - The result of the mutation, including status and error handling.
+ */
 export default function useSubmitData() {
     const { state, setNewState } = useBuilder();
 

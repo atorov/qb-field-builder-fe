@@ -1,3 +1,11 @@
+/**
+ * src/shared/beToFeDataAdapter.ts
+ *
+ * This function takes a backend data response and a previous state,
+ * validates the backend data, and returns a new frontend state
+ * based on the validated data and the previous state.
+ */
+
 import {
     type BeDataResponse,
     BeDataResponseSchema,
@@ -8,6 +16,13 @@ import {
     StateSchema,
 } from "../models";
 
+/**
+ * Adapts backend data to frontend state.
+ *
+ * @param {BeDataResponse} data - The data received from the backend.
+ * @param {State} prevState - The previous state of the frontend.
+ * @returns {State} - The new state of the frontend.
+ */
 export default function beToFeDataAdapter(
     data: BeDataResponse,
     prevState: State,

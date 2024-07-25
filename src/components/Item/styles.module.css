@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-xs);
+}
+
+.container:hover {
+    background-color: var(--background-dark-color);
+}
+
+.name {
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-xs);
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.firstPart {}
+
+.secondPart {
+    background-color: var(--warning-light-color);
+    color: var(--warning-dark-color);
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--danger-color);
+    border-radius: var(--border-radius-sm);
+    height: 2rem;
+    background-color: var(--background-color);
+    padding: 0 var(--spacing-sm);
+    color: var(--danger-color);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.container:hover .deleteButton {
+    background-color: var(--danger-color);
+    color: var(--text-light-color);
+}
+
+.message {
+    font-size: var(--font-size-sm);
+}
+
+.error {
+    color: var(--danger-color);
+}
+
+.warning {
+    color: var(--warning-dark-color);
+}
+
+.description {
+    color: var(--text-muted-color);
+}

@@ -1,0 +1,108 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #007bff;
+    --primary-light-color: #66b2ff;
+    --primary-dark-color: #0056b3;
+
+    /* Secondary Colors */
+    --secondary-color: #6c757d;
+    --secondary-light-color: #a9aeb3;
+    --secondary-dark-color: #494f54;
+
+    /* Success Colors */
+    --success-color: #28a745;
+    --success-light-color: #71dd8a;
+    --success-dark-color: #1c7430;
+
+    /* Danger Colors */
+    --danger-color: #dc3545;
+    --danger-light-color: #f6959a;
+    --danger-dark-color: #a71d2a;
+
+    /* Warning Colors */
+    --warning-color: #ffc107;
+    --warning-light-color: #ffdd57;
+    --warning-dark-color: #b78904;
+
+    /* Info Colors */
+    --info-color: #17a2b8;
+    --info-light-color: #67d5e6;
+    --info-dark-color: #0f6678;
+
+    /* Light and Dark */
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+
+    /* Background Colors */
+    --background-color: #f0f8ff;
+    --background-light-color: #ffffff;
+    --background-dark-color: #e9ecef;
+
+    /* Text Colors */
+    --text-color: #414549;
+    --text-light-color: #f8f9fa;
+    --text-dark-color: #343a40;
+    --text-muted-color: #6c757d;
+
+    /* Borders */
+    --border-color: #dee2e6;
+    --border-radius-xs: 0.125rem;
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 2rem;
+
+    /* Shadows */
+    --box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+
+    /* Fonts */
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-heading: 'Roboto', sans-serif;
+    --font-size-base: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.25rem;
+    --line-height-base: 1.5;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 0.875rem;
+        --font-size-lg: 1rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 2rem;
+    }
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-heading);
+    color: var(--text-dark-color);
+}

@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-lg);
+    gap: var(--spacing-xs);
+}
+
+.label {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark-color);
+}
+
+.required {
+    color: var(--danger-color);
+}
+
+.message {
+    font-size: var(--font-size-sm);
+}
+
+.error {
+    color: var(--danger-color);
+}
+
+.warning {
+    color: var(--warning-dark-color);
+}
+
+.description {
+    color: var(--text-muted-color);
+}

@@ -1,0 +1,17 @@
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+}
+
+@media (max-width: 768px) {
+    .buttonGroup {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .buttonGroup button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    margin: var(--spacing-md) auto;
+    max-width: 768px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-light-color);
+
+}
+
+.header {
+    margin: 0;
+    border-top-left-radius: var(--border-radius-md);
+    border-top-right-radius: var(--border-radius-md);
+    padding: var(--spacing-sm);
+    background-color: var(--background-dark-color);
+    font-size: var(--font-size-lg);
+    text-align: center;
+}
+
+.body {
+    padding: var(--spacing-md);
+}

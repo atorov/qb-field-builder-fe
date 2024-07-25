@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-md);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+}
+
+.icon {
+    min-width: var(--spacing-lg);
+    margin-right: var(--spacing-sm);
+    font-size: 1.5rem;
+}
+
+.error {
+    background-color: var(--danger-light-color);
+    color: var(--danger-dark-color);
+}
+
+.default {
+    background-color: var(--background-light-color);
+    color: var(--text-color);
+}
+
+
+.info {
+    background-color: var(--info-light-color);
+    color: var(--info-dark-color);
+}
+
+.success {
+    background-color: var(--success-light-color);
+    color: var(--success-dark-color);
+}
+
+.warning {
+    background-color: var(--warning-light-color);
+    color: var(--warning-dark-color);
+
+}
+
+.message {
+    margin: 0 0 0 var(--spacing-sm);
+}

@@ -1,0 +1,30 @@
+.container {
+    margin-bottom: var(--spacing-lg);
+}
+
+.label {
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark-color);
+}
+
+.required {
+    color: var(--danger-color);
+}
+
+.select {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-sm);
+    background-color: var(--background-light-color);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    /* Remove default chevron */
+    appearance: none;
+    /* Custom chevron */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5"><path fill="%236c757d" d="M0 0l5 5 5-5H0z"/></svg>');
+    /* Custom chevron */
+    background-repeat: no-repeat;
+    background-position: right var(--spacing-md) center;
+    background-size: var(--font-size-base) auto;
+}

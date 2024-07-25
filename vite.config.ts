@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 
@@ -10,5 +12,15 @@ export default defineConfig({
     server: {
         open: true,
         port: 8081,
+    },
+    test: {
+        environment: "happy-dom",
+        globals: true,
+        outputFile: {
+            html: "./vitest-reports/html/index.html",
+            json: "./vitest-reports/json/report.json",
+        },
+        reporters: ["default", "html", "json"],
+        setupFiles: ["./__test__/setup.ts"],
     },
 });

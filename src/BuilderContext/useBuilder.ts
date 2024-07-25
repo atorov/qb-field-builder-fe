@@ -9,7 +9,7 @@
  * to the console.
  */
 
-import { useCallback, useContext, useEffect } from "react";
+import { useCallback, useContext } from "react";
 import { ACTION_TYPE, type State } from "../models";
 import Context from "./Context";
 
@@ -21,10 +21,6 @@ export default function useBuilder() {
     }
 
     const [state, dispatch] = context;
-
-    useEffect(() => {
-        console.log("::: TODO: state:", state);
-    }, [state]);
 
     const hasErrors = Object.values(state.fields).some(
         ({ validation }) => validation.errorCode,

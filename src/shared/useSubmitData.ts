@@ -22,6 +22,8 @@ export default function useSubmitData() {
     return useMutation({
         mutationFn: async () => {
             const data = feToBeDataAdapter(state);
+            console.log("::: Current state:", state);
+            console.log("::: Request payload:", data);
 
             const res = await fetch(
                 "https://qb-field-builder-api-production.up.railway.app/api/builder",

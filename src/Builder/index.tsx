@@ -1,3 +1,13 @@
+/**
+ * src/Builder/index.tsx
+ *
+ * This file defines the `Builder` component, which is a form-based interface for building fields.
+ * It uses various components and hooks to manage state and handle form submission, validation, and error handling.
+ * The component allows users to add, edit, and remove choices, set default choices, configure display order,
+ * and toggle multiselect and required options. It also integrates with the backend API to submit the form data
+ * and handle the response.
+ */
+
 import { type ChangeEvent, type FormEvent, useRef } from "react";
 import { IoMdAdd } from "react-icons/io";
 import useBuilder from "../BuilderContext/useBuilder";

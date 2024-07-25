@@ -1,3 +1,14 @@
+/**
+ * src/BuilderContext/useBuilder.ts
+ *
+ * This file defines the `useBuilder` hook, which provides access to the builder context and
+ * various state management functions. The hook ensures it is used within a `Provider`,
+ * and provides utility functions to interact with the builder state, including adding,
+ * removing, and resetting choices, as well as setting various field values. It also
+ * includes state validation to check for errors and warnings, and logs the state changes
+ * to the console.
+ */
+
 import { useCallback, useContext, useEffect } from "react";
 import { ACTION_TYPE, type State } from "../models";
 import Context from "./Context";

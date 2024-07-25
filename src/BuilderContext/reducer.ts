@@ -1,3 +1,14 @@
+/**
+ * src/BuilderContext/reducer.ts
+ *
+ * This file defines the `reducer` function for managing state updates in the builder application.
+ * The reducer handles various action types to update the state, including adding and removing choices,
+ * resetting the state, setting default choices, display order, label, multiselect, new choice,
+ * required fields, and setting a new state. Each action type triggers state validation and updates
+ * the `updatedAt` timestamp. The reducer integrates with the `validate` function to ensure the state
+ * remains consistent and adheres to the defined validation rules.
+ */
+
 import {
     ACTION_TYPE,
     FIELD_KEYS,

@@ -1,3 +1,13 @@
+/**
+ * src/BuilderContext/validateFieldData.ts
+ *
+ * This file defines the `validateFieldData` function, which performs validation on individual fields of the state.
+ * The function checks the field value based on the provided key and the entire state.
+ * It returns a validation object containing error and warning codes based on the validation rules.
+ * Specific validations are performed for choices, default choice, label, and new choice fields,
+ * checking for conditions such as required fields, maximum length, duplication, and exceeding maximum number of choices.
+ */
+
 import {
     CHOICES_MAX_NUMBER,
     type CommonField,

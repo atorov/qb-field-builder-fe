@@ -1,3 +1,41 @@
+/**
+ * src/models/index.ts
+ *
+ * This file contains various constants, types, and validation schemas used throughout the application.
+ *
+ * Constants:
+ * - `CHOICES_MAX_NUMBER`: The maximum number of choices allowed.
+ * - `DEBOUNCING_PERIOD`: The period in milliseconds used for debouncing.
+ * - `STORAGE_KEY`: The key used for storing state in localStorage.
+ * - `TEXT_VALUE_MAX_LENGTH`: The maximum length of text values.
+ * - `DISPLAY_ORDER`: An object containing possible display order values.
+ * - `DISPLAY_ORDER_VALUES`: An array of display order values.
+ * - `DISPLAY_ORDER_LABELS`: An object mapping display order values to their respective labels.
+ * - `ERROR_CODES`: An object containing possible error codes.
+ * - `ERROR_CODE_VALUES`: An array of error code values.
+ * - `WARN_CODES`: An object containing possible warning codes.
+ * - `WARN_CODE_VALUES`: An array of warning code values.
+ *
+ * Types:
+ * - `CommonField`: A type representing the common field schema.
+ * - `State`: A type representing the overall application state.
+ * - `Action`: A type representing possible actions in the application.
+ * - `ContextValue`: A type representing the context value, which includes the state and dispatch function.
+ * - `BeDataResponse`: A type representing the backend data response.
+ *
+ * Schemas:
+ * - `CommonFieldSchema`: A Zod schema for validating common fields.
+ * - `StateSchema`: A Zod schema for validating the overall state.
+ * - `BeDataResponseSchema`: A Zod schema for validating the backend data response.
+ *
+ * Initial State:
+ * - `INITIAL_STATE_VALIDATION`: An object representing the initial validation state.
+ * - `INITIAL_STATE`: An object representing the initial state of the application.
+ *
+ * Action Types:
+ * - `ACTION_TYPE`: An object containing possible action types for state management.
+ */
+
 import { type Dispatch } from "react";
 import { z } from "zod";
 

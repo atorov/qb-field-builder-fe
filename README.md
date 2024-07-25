@@ -12,6 +12,8 @@ This project demonstrates the use of advanced React concepts and best practices 
 
 The live demo of this application is deployed and available for testing at **[Field Builder](https://field-builder.surge.sh/)**
 
+![Field Builder UI](https://github.com/atorov/qb-field-builder-fe/blob/master/public/field-builder.jpeg)
+
 ## Custom API Service Implementation
 
 Instead of using the suggested Mocky service, I implemented a custom backend service that accepts, validates, and processes the data submitted by the frontend application. The backend service ensures the submitted data meets all specified criteria. It adds the default choice to the list of choices and truncates the text of each choice to the maximum allowed length of 40 characters. In case of errors or data validation problems, it returns appropriate status codes and human-readable messages for any validation errors.

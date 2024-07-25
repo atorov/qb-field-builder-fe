@@ -3,6 +3,10 @@ import { z } from "zod";
 
 export const CHOICES_MAX_NUMBER = 5; // TODO: 50
 
+export const DEBOUNCING_PERIOD = 2_500; // ms
+
+export const STORAGE_KEY = "qb_field_builder_2024";
+
 export const TEXT_VALUE_MAX_LENGTH = 40;
 
 export const DISPLAY_ORDER = {

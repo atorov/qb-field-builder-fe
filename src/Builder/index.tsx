@@ -8,7 +8,7 @@
  * and handle the response.
  */
 
-import { type ChangeEvent, type FormEvent, useRef } from "react";
+import { type ChangeEvent, useRef } from "react";
 import { IoMdAdd } from "react-icons/io";
 import useBuilder from "../BuilderContext/useBuilder";
 import {
@@ -236,14 +236,13 @@ export default function Builder() {
         resetMutationState();
     }
 
-    function handleSubmit(event: FormEvent<HTMLFormElement>) {
-        event.preventDefault();
+    function handleSubmit() {
         mutate();
     }
 
     return (
         <Container title="Field Builder">
-            <form onSubmit={handleSubmit}>
+            <form>
                 <TextField
                     id="label"
                     name="label"
@@ -345,7 +344,9 @@ export default function Builder() {
                         colorKind="primary"
                         disabled={isSubmitButtonDisabled}
                         kind="solid"
+                        type="button"
                         width="auto"
+                        onClick={handleSubmit}
                     >
                         {submitButtonLabel}
                     </Button>

@@ -10,9 +10,9 @@ This project demonstrates the use of advanced React concepts and best practices 
 
 ## Live Demo
 
-The live demo of this application is deployed and available for testing at [Field Builder](https://field-builder.surge.sh/)
+The live demo of this application is deployed and available for testing at **[Field Builder](https://field-builder.surge.sh/)**
 
-### Custom API Service Implementation
+## Custom API Service Implementation
 
 Instead of using the suggested Mocky service, I implemented a custom backend service that accepts, validates, and processes the data submitted by the frontend application. The backend service ensures the submitted data meets all specified criteria. It adds the default choice to the list of choices and truncates the text of each choice to the maximum allowed length of 40 characters. In case of errors or data validation problems, it returns appropriate status codes and human-readable messages for any validation errors.
 
@@ -33,7 +33,7 @@ The API is deployed on Railway.app and is publicly accessible at: <https://qb-fi
 -   **User-Friendly Interface**: Provides a responsive and intuitive user interface with real-time feedback.
 -   **Error Handling**: The application provides comprehensive validation and error messages to guide users in providing valid inputs.
 
-### Additional Features and Enhancements
+## Additional Features and Enhancements
 
 The project meets the mandatory requirements outlined in the task description and includes additional features, such as:
 

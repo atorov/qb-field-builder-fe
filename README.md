@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository showcases my work for the Quick Base Front End Craft Demo assignment.
+This repository showcases my work for the Quickbase Front End Craft Demo assignment.
 
 **Field Builder** is a React-based application that provides a form interface for creating and managing customizable fields. The application supports various features such as adding, editing, and removing choices, setting default choices, configuring display orders, and toggling multiselect and required options.
 
